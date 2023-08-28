@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Jenesequoi
 - 👀 I’m interested in all things data
-- 🌱 I’m currently learning R Programming and SQL
+- 🌱 I’m currently learning R, Python and SQL
 - 💞️ I’m looking to collaborate on data analytics projects
 - 📫 Reach me via email violetmainah@gmail.com
 
