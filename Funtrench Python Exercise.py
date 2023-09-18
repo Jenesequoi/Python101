@@ -17,8 +17,28 @@ for i in list:
         #print longest name
         print('The longest name is: ', i)
 
+"""2. Write a sentinel controlled loop that requests user for integer and stop to exit then prints sum of integers."""
+count = 0
+total = 0
+while True:
+   input_value = input('enter number\n')
+   if input_value == "Stop":
+      break
+   try:
+      input_value = int(input_value)
+      count = count+1
+      total = total+input_value
+   except:
+      print('invalid data')
+      print("The sum is:" , total)
 
 
+
+
+
+
+
+    
 
 
     
