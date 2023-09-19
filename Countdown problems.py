@@ -24,6 +24,27 @@ while count!= 100:
     if evens== 0:
         print(count)
 
+"""4. Use a while loop to ask the user for 5 numbers.  Print the average of those numbers."""
+count=0 
+sum= 0
+average= 0
+while count <5:
+    data= int(input("Enter number: "))
+    count+= 1
+    sum += data
+    average= (sum/count)
+    if count== 5:
+        print("Average:", average)
+
+
+
+
+
+
+
+
+
+
 
 
 
