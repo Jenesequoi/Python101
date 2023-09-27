@@ -104,7 +104,27 @@ while runtime!= 30:
     print("Runtime", runtime, "Runburn", runburn, "Calories", currentcalories)
 
 """9. Use a while loop to display a table of Celsius temperatures from 20 to 10 and their Fahrenheit equivalents."""
+celsius= 20
+print("Celsius\tFarenheit")
+print("------|------")
+while celsius >=10:
+    farenheit= (9/5*celsius+32)
 
+    print(f"{celsius}|{farenheit}")
+
+    celsius-=1
+
+"""10. Use a while loop to display a table of Fahrenheit temperatures from 100 to 85 and their Celsius equivalents."""
+farenheit= 100
+print("Farenheit\tCelsius")
+print("-------|-------")
+while farenheit >=85:
+    celsius= (5/9*(farenheit-32))
+    print(f"{farenheit}|{celsius}")
+    farenheit-=1
+
+
+"-------------------------------------------------------THE END------------------------------------------------------"
 
 
 
