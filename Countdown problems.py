@@ -84,10 +84,12 @@ Use a while loop to display a chart to display how many calories you have left t
 walkminutes= 0
 initialcalories= 1165
 calories_per_walkminute= 8
-while walkminutes!= 60:
-    walkminutes+= 1
+print("Walk minutes\tCalories left")
+print("------|------")
+while walkminutes<= 60:
     caloriesleft= initialcalories- (calories_per_walkminute*walkminutes)
-    print(walkminutes, caloriesleft)
+    print(f"{walkminutes}|{caloriesleft}")
+    walkminutes+= 1
 
 """After your exercise, you get even more hungry and eat a Big Mac which is 540 calories. Add these calories to the amount you have left after walking.
 You burn 10 calories per minute running.
@@ -97,11 +99,14 @@ caloriesleft= 685
 bigmac= 540
 calories_per_runminute= 10
 runtime= 0
+print("Runtime\tRunburn\tCalories left")
+print("-----|-------")
 while runtime!= 30:
-    runtime+= 1
     runburn= calories_per_runminute*runtime
     currentcalories= (caloriesleft+ bigmac)- runburn
-    print("Runtime", runtime, "Runburn", runburn, "Calories", currentcalories)
+    print(f"{runtime}|{runburn}|{currentcalories}")
+    runtime+= 1
+    
 
 """9. Use a while loop to display a table of Celsius temperatures from 20 to 10 and their Fahrenheit equivalents."""
 celsius= 20
@@ -122,22 +127,5 @@ while farenheit >=85:
     celsius= (5/9*(farenheit-32))
     print(f"{farenheit}|{celsius}")
     farenheit-=1
-
-
-"-------------------------------------------------------THE END------------------------------------------------------"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
