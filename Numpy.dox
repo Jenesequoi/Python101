@@ -1,0 +1,52 @@
+Numpy
+
+Numpy is a Numerical Python package. Installed using '-m pip install numpy'.
+It uses arrays for data representation and manipulation. All its data has to be homogeneous. Meaning same data type either str, or int, or float, etc. 
+
+It uses methods for operation such as 
+np.ones
+np.zeros
+np.full
+
+These 3 attributes tell us what we need to know about an array
+np.shape
+np.size
+np.dim
+
+1-d np arrays can take many forms:
+
+1x1
+my_list = np.array[1,2,3,4,5]
+print (my_list.dim)
+print(my_list.size)
+print(my_list.shape)
+print(my_list)
+
+3x1
+my_list= np.array((3,1), 8)
+print (my_list.dim)
+print(my_list.size)
+print(my_list.shape)
+print(my_list)
+
+1x3
+my_list= np.full(1,3)
+print (my_list.dim)
+print(my_list.size)
+print(my_list.shape)
+print(my_list)
+
+Transforming arrays to perform arithmetic is called broadcasting.
+
+For arrays to be used together in arithmetic, they have to be the same size.
+
+We use 'is' to find out if two arrays have the same data.
+We use '==' to find out if the arrays are exactly equal.
+
+To reshape the array, use:
+So, to flatten an array use:
+x.ravel()/x.flatten()
+
+To expand an array use:
+x[:, None] which will fill out the array
+x[:, np.newaxis]
